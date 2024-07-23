@@ -16,18 +16,21 @@
   }
 }
 
+* {
+  box-sizing: border-box;
+  /* border: 1px solid #00ff22; */
+}
+
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  overflow-x: hidden;
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .clip-path-inset-0 {
+    clip-path: inset(0);
   }
+}
+
+.topcalc {
+  top: calc(50% + 100px);
 }
