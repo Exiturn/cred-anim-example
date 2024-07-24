@@ -31,10 +31,16 @@ export default function Home() {
           <div className="h-screen min-h-screen sticky top-0 left-0">
             {/* TOP LAYER */}
             <div className="z-[2] w-full min-h-screen h-screen relative clip-path-inset-0 toplayer bg-red-800">
-              <div className="absolute w-full top-0 left-0 h-screen flex flex-col justify-center items-center z-[3] text-white">
-                <div className="w-full h-screen absolute topcalc left-[50%] transform -translate-y-[50%] -translate-x-[50%] flex justify-center items-center">
+              <div className="absolute w-full top-0 left-0 h-screen flex flex-col justify-center items-center z-[3] text-white toplayertext">
+                <div
+                  className="absolute top-[20%] left-[50%] transform -translate-y-[50%] -translate-x-[50%]"
+                  style={{ translate: "none", rotate: "none", scale: "none" }}
+                >
+                  HELLO MAN
+                </div>
+                <div className="absolute topcalc left-[50%] transform -translate-y-[50%] -translate-x-[50%] flex justify-center items-center z-[3]">
                   <div
-                    className="font-sans text-[60px] md:text-[136px] tracking-[-6px] font-[400] leading-[60px] md:leading-[106px] toplayertext"
+                    className="font-sans text-[60px] md:text-[136px] tracking-[-6px] font-[400] leading-[60px] md:leading-[106px]"
                     style={{
                       translate: "none",
                       rotate: "none",
